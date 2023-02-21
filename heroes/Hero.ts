@@ -3,8 +3,7 @@ import { NullWeapon } from "../weapons/NullWeapon";
 import { Weapon } from "../weapons/Weapon";
 
 export abstract class Hero {
-    
-    
+   
     protected name: string;
     protected healthPoints: number;
     protected ability: Ability;

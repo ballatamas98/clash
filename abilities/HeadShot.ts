@@ -5,9 +5,9 @@ export class HeadShot  implements Ability{
     
     
     doEffect(hero: Hero): void {
-        throw new Error("Method not implemented.");
+        hero.getWeapon().damage.forEach(damage => damage += 15);
     }
     removeEffect(hero: Hero): void {
-        throw new Error("Method not implemented.");
+        hero.getWeapon().damage.forEach(damage => damage += 15);
     }
 }

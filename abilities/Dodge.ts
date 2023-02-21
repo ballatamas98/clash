@@ -4,9 +4,9 @@ import { Ability } from "./Ability";
 export class Dodge implements Ability{
 
     doEffect(hero: Hero): void {
-        throw new Error("Method not implemented.");
+       hero.setEvasion(hero.getEvasion() + 100);
     }
     removeEffect(hero: Hero): void {
-        throw new Error("Method not implemented.");
+        hero.setEvasion(hero.getEvasion() - 100);
     }
 }
